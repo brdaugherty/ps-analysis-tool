@@ -13,16 +13,3 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/**
- * External dependencies.
- */
-import { ldWorkerOnMessageCallback } from '@ps-analysis-tool/library-detection';
-
-/**
- * Main onmessage handler of the worker thread.
- * Other modules onMessageHandlers can be added here.
- * @param {Event} event Event object.
- */
-self.onmessage = function (event) {
-  ldWorkerOnMessageCallback(event);
-};
